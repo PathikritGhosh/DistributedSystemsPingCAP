@@ -26,7 +26,7 @@ func MergeSort(src []int64) {
 
 //call by reference as we pass array as parameters
 func merge(result, left, right []int64) {
-	var lindex, rindex, counter int //defualt value is 0 or null in Go
+	var lindex, rindex, counter int //default value is 0 or null in Go
 
 	for lindex < len(left) && rindex < len(right) { //while loop in Go
 		if left[lindex] <= right[rindex] {
@@ -53,3 +53,4 @@ func merge(result, left, right []int64) {
 }
 
 //Complexity: O(nlog(n)) time and O(n) space. Standard sequential mergersort. 
+
